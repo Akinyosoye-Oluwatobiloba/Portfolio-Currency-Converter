@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CURRENCY CONVERTER</title>
+  </head>
+  <body background="images/nice.webp">
+    <div class="nav">
+      <ul>
+        <li><a href="index.html">HOME</a></li>
+        <li><a href="currency converter.html">CURRENCY CONVERTER</a></li>
+        <li><a href="aboutme.html">ABOUT ME</a></li>
+      </ul>
+    </div>
+    <p>
+      <label>Naira</label>
+      <input
+        id="inputFeet"
+        type="number"
+        placeholder="Currency"
+        oninput="lengthConverter(this.value)"
+        onchange="lengthConverter(this.value)"
+      />
+    </p>
+    <p>DOLLAR: <span id="outputdollars"></span></p>
+    <script>
+      function lengthConverter(valNum) {
+        document.getElementById("outputdollars").innerHTML = valNum / 460.52;
+      }
+    </script>
+    <style>
+      input[type="number"] {
+        width: 100%;
+        padding: 12px 20px;
+        box-sizing: border-box;
+        margin: 8px;
+        border-color: 2px 3px #888888;
+        font-size: 200%;
+      }
+      label {
+        font-size: 200%;
+      }
+      p {
+        font-size: 200%;
+      }
+      ul {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        background-color: #333333;
+      }
+
+      li {
+        float: left;
+      }
+
+      li a {
+        display: block;
+        color: white;
+        text-align: center;
+        padding: 20px;
+        text-decoration: none;
+      }
+
+      li a:hover {
+        background-color: #111111;
+      }
+      li a:visited {
+        color: whitesmoke;
+      }
+    </style>
+  </body>
+</html>
